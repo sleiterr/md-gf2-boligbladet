@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="exam" />
+    <meta name="keywords" content="bolig-bladet" />
+    <meta name="author" content="Oleg Troian" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- STYLE-CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media-queries.css" />
+    <link rel="stylesheet" href="./icons/icons.css" />
+    <!-- JS -->
+    <script src="./js/script.js" defer></script>
+    <script src="./js/hero-slide.js" defer></script>
+    <script src="./js/gallery.js" defer></script>
+    <script src="./js/subscription-form.js" defer></script>
+    <title>Eksamen</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="nav-bar">
+        <div class="nav-log">
+          <a href="#" class="logo-link">
+            <img
+              src="./logo/logo-boligbladet-707070.png"
+              alt="bolig-logo"
+              class="logo-link"
+            />
+          </a>
+        </div>
+
+        <div class="burger-btn">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#inspiration" class="nav-link">inspiration</a>
+          </li>
+          <li class="nav-item">
+            <a href="#artikler" class="nav-link">artikler</a>
+          </li>
+          <li class="nav-item">
+            <a href="#abonnement" class="nav-link">abonnement</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!--? HERO-SECTION -->
+      <section class="section-hero" id="home">
+        <img class="image-in-slide" src="" alt="" />
+
+        <div class="hero-container">
+          <div class="hero-content">
+            <h1 class="hero-title">Dit foretrukne online boligmagasin</h1>
+            <a href="https://web-mcdm.dk/" class="hero-link" target="_blank"
+              >Læs mere</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!--? GALLERY-SECTION -->
+      <section class="gallery-section" id="inspiration">
+        <div class="gallery-container container">
+          <div class="gall-content">
+            <p class="gall-subtitle">Søger du</p>
+            <h2 class="gall-title">inspiration til boligindretning ?</h2>
+          </div>
+          <div class="gallery-img"></div>
+          <div class="gall-btt">
+            <a href="https://web-mcdm.dk/" target="_blank" class="gall-link"
+              >se alle rum</a
+            >
+          </div>
+        </div>
+
+        <!--! MODAL -->
+        <div id="modal" class="modal">
+          <div class="modal-content">
+            <i class="icon-x close"></i>
+
+            <div class="img-modal-wrapper">
+              <button class="arrow-slider arrow-1">
+                <i class="icon-chevron-left left"></i>
+              </button>
+
+              <img id="modal-img" />
+
+              <button class="arrow-slider arrow-2">
+                <i class="icon-chevron-left right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--? ARTIKEL -->
+      <section class="artikel-section" id="artikler">
+        <div class="artikel-container container">
+          <div class="articke-content">
+            <p class="artikel-subtitle">UGENS MEST LÆSTE</p>
+            <div class="article-header">
+              <h2 class="artikel-title">
+                “Thomas var mest til neutrale farver, men pludselig er en farve
+                vokset på ham…”
+              </h2>
+            </div>
+            <a href="https://web-mcdm.dk/" target="_blank" class="artikle-link"
+              >Læs artiklen her</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!--? FORM-SECTION -->
+      <section class="form-section" id="abonnement">
+        <div class="form-container container">
+          <div class="submit-content">
+            <div class="form-content">
+              <h2 class="form-title">Abonnér på vores online magasin</h2>
+              <h4 class="form-subtitle">Og spar op til 379 kr</h4>
+              <p class="form-text">
+                Når du udfylder formularen, får du fakturaen tilsendt på mail.
+                Husk at tjekke dit spamfilter!
+              </p>
+            </div>
+
+            <div class="form-buy">
+              <h2 class="subscription-title"></h2>
+
+              <form action="#" method="#" class="form-data" id="order-data">
+                <div class="name-form">
+                  <label for="name-tx" class="input-title-name"
+                    >fulde navn</label
+                  >
+                  <input type="text" name="firstName" id="name-tx" />
+                </div>
+                <div class="name-form">
+                  <label for="email-txt" class="input-title-email">email</label>
+                  <div class="mesg"></div>
+                  <input type="email" name="email" id="email-txt" />
+                </div>
+                <div class="name-form">
+                  <label for="order-leter-time" class="select-title"
+                    >antal måneder</label
+                  >
+                  <select name="order-leter-time" id="order-time-dropdown">
+                    <option value="month" selected disabled>3 måneder</option>
+                    <option value="month-1">1 måneder</option>
+                    <option value="month-2">2 måneder</option>
+                    <option value="month-3">3 måneder</option>
+                  </select>
+                </div>
+                <input type="submit" value="køb abonnement" id="form-submit" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--? FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="contact-container">
+          <h4 class="footer-title">Kontakt os</h4>
+          <ul class="contact-list">
+            <li class="contact-item">
+              <h4 class="contact-title">telefon</h4>
+              <a href="tel:+4523547678" class="address">+45 23 54 76 78</a>
+            </li>
+            <li class="contact-item">
+              <h4 class="contact-title">email</h4>
+              <a href="mailto:info@info.dk" class="address">info@info.dk</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- <div class="mob-footer"></div> -->
+        <div class="footer-mob">
+          <div class="icon-container">
+            <ul class="footer-icon-list">
+              <li class="logo-items">
+                <img
+                  src="./logo/logo-boligbladet-white.png"
+                  class="footer-logo"
+                />
+              </li>
+              <li class="icon-items">
+                <a
+                  href="https://web-mcdm.dk/"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <img
+                    src="./icons/icon-facebook.svg"
+                    alt="facebook"
+                    class="icon-social"
+                  />
+                </a>
+
+                <a
+                  href="https://web-mcdm.dk/"
+                  target="_blank"
+                  class="social-link"
+                >
+                  <img
+                    src="./icons/icon-instagram.svg"
+                    alt="instagram"
+                    class="icon-social"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-menu">
+            <h4 class="footer-title menu-title">information</h4>
+            <ul class="footer-list">
+              <li class="footer-item">
+                <a
+                  href="https://web-mcdm.dk/"
+                  target="_blank"
+                  class="footer-link"
+                  >Abonnementer</a
+                >
+              </li>
+              <li class="footer-item">
+                <a
+                  href="https://web-mcdm.dk/"
+                  target="_blank"
+                  class="footer-link"
+                  >Nyhedsbrev</a
+                >
+              </li>
+              <li class="footer-item">
+                <a
+                  href="https://web-mcdm.dk/"
+                  target="_blank"
+                  class="footer-link"
+                  >Annoncering</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
