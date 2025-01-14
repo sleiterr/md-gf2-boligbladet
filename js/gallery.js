@@ -10,12 +10,14 @@ const gallery = document.querySelector(".gallery-img");
 
 let currentIndex = 0;
 
+// array of objects img
 let galleryImages = [
   { src: "./img/kitchen.jpg", caption: "køkkenet" },
   { src: "./img/bathroom.jpg", caption: "badeværelset" },
   { src: "./img/livingroom.jpg", caption: "stuen" },
   { src: "./img/garden.jpg", caption: "haven" },
 ];
+
 
 galleryImages.forEach((item) => {
   gallery.innerHTML += `
@@ -39,7 +41,7 @@ function setActiveSlider() {
 setActiveSlider();
 
 function right() {
-  if ((currentIndex >= galleryImages.length - 1)) {
+  if (currentIndex >= galleryImages.length - 1) {
     currentIndex = 0;
   } else {
     currentIndex++;

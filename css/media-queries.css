@@ -33,10 +33,6 @@
 
   /*? ==== BURGER-MENU ====*/
 
-  .nav-menu.show {
-    display: flex;
-  }
-
   .nav-item {
     display: flex;
     align-items: center;
@@ -77,6 +73,10 @@
     background-color: rgb(231, 152, 153);
     transition: 0.3s ease;
     border-radius: 10px;
+  }
+  
+  .nav-menu.show {
+    display: flex;
   }
 
   .nav-menu {

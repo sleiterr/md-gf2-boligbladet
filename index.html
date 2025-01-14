@@ -74,7 +74,10 @@
             <p class="gall-subtitle">Søger du</p>
             <h2 class="gall-title">inspiration til boligindretning ?</h2>
           </div>
+
+          <!--? CONTAINER FOR GALLERY -->
           <div class="gallery-img"></div>
+          
           <div class="gall-btt">
             <a href="https://web-mcdm.dk/" target="_blank" class="gall-link"
               >se alle rum</a
@@ -136,17 +139,28 @@
             <div class="form-buy">
               <h2 class="subscription-title"></h2>
 
+              <!--!forgot about required  for input-->
               <form action="#" method="#" class="form-data" id="order-data">
                 <div class="name-form">
                   <label for="name-tx" class="input-title-name"
                     >fulde navn</label
                   >
-                  <input type="text" name="firstName" id="name-tx" />
+                  <input
+                    type="text"
+                    name="firstName"
+                    required
+                    id="name-tx"
+                  />
                 </div>
                 <div class="name-form">
                   <label for="email-txt" class="input-title-email">email</label>
                   <div class="mesg"></div>
-                  <input type="email" name="email" id="email-txt" />
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    id="email-txt"
+                  />
                 </div>
                 <div class="name-form">
                   <label for="order-leter-time" class="select-title"
@@ -161,6 +175,7 @@
                 </div>
                 <input type="submit" value="køb abonnement" id="form-submit" />
               </form>
+
             </div>
           </div>
         </div>
@@ -172,6 +187,7 @@
       <div class="footer-container">
         <div class="contact-container">
           <h4 class="footer-title">Kontakt os</h4>
+
           <ul class="contact-list">
             <li class="contact-item">
               <h4 class="contact-title">telefon</h4>
@@ -182,11 +198,14 @@
               <a href="mailto:info@info.dk" class="address">info@info.dk</a>
             </li>
           </ul>
+
         </div>
 
         <!-- <div class="mob-footer"></div> -->
         <div class="footer-mob">
+
           <div class="icon-container">
+
             <ul class="footer-icon-list">
               <li class="logo-items">
                 <img
@@ -194,6 +213,8 @@
                   class="footer-logo"
                 />
               </li>
+
+              <!--!not-semantic  -->
               <li class="icon-items">
                 <a
                   href="https://web-mcdm.dk/"
@@ -220,9 +241,11 @@
                 </a>
               </li>
             </ul>
+
           </div>
 
           <div class="footer-menu">
+
             <h4 class="footer-title menu-title">information</h4>
             <ul class="footer-list">
               <li class="footer-item">
@@ -250,6 +273,7 @@
                 >
               </li>
             </ul>
+
           </div>
         </div>
       </div>
