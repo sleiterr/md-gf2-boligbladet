@@ -800,3 +800,13 @@ option {
   color: rgb(199, 199, 199);
   transition: 250ms ease;
 }
+
+/* TEST */
+
+input:invalid {
+  background-color: #e79899;
+}
+
+input:valid {
+  background-color: #aa420e;
+}

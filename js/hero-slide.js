@@ -4,6 +4,8 @@ let currentImageIndex = 0;
 
 let images = ["./img/slider1.jpg", "./img/slider2.jpg", "./img/slider3.jpg"];
 
+
+
 function heroActiveSlide() {
   slide.src = images[currentImageIndex]; //!slide.src змінює джерело зображення в атрибуті <src>.
 }

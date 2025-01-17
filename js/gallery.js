@@ -1,8 +1,8 @@
 const modal = document.querySelector("#modal");
 const imgInModal = document.querySelector("#modal-img");
-const btnClose = document.querySelector(".close");
 
-// const slideBtn = document.querySelector("#modal-img");
+//? btnn-navigation
+const btnClose = document.querySelector(".close");
 const btnLeft = document.querySelector(".left");
 const btnRight = document.querySelector(".right");
 
@@ -19,6 +19,11 @@ let galleryImages = [
 ];
 
 
+
+// galleryImages.forEach((item, index) => {
+//   console.log(`Index: ${index}, Src: ${item.src}, Caption: ${item.caption}`);
+//  })
+
 galleryImages.forEach((item) => {
   gallery.innerHTML += `
   <div class='gallery-item'>
@@ -29,14 +34,14 @@ galleryImages.forEach((item) => {
 });
 
 //? MODAL-GALLERY
-
+// update-img-in modal window
 function setActiveSlider() {
   if (galleryImages.length > 0) {
     imgInModal.src = galleryImages[currentIndex].src;
-  } else {
-    // console.log("No images in galleryImages");
   }
 }
+
+//?
 
 setActiveSlider();
 
